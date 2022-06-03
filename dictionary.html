@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web App Prototype-May</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.2/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.2/js/bootstrap.bundle.min.js"></script>
+    
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap" rel="stylesheet">
+
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <div class="Layout">
+            <!-- Set left nav bar, loading Bootstrap Icons with svg file --> 
+            <div class="LeftBar">
+                <ul class="p-0">
+                    <li>
+                        <img class="imgLogo w-100" src="Image/Logo.png" alt="logo">
+                    </li>
+                    <li class="item d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 -3 18 22">
+                            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                        </svg>
+                    </li>
+                    <li class="item d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 -3 18 22">
+                            <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+                            <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+                            <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+                        </svg>
+                    </li>
+                    <li class="item d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 -3 18 22">
+                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                            <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                        </svg>
+                    </li>
+                    <li class="item active d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 -3 18 23">
+                            <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z"/>
+                            <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                            <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                          </svg>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main body on the right side -->
+            <div class="Main w-100 p-0 m-0 container-fluid d-flex justify-content-center">
+                <div id="MainContent" class="w-75 p-0 m-0">
+            <!-- Page Tilte -->
+                    <div class="row p-0" id="Welcome">
+                        <h1 class="p-0 m-0">Welcome to StudBud</h1>
+                        <hr class="p-0 m-0" id="hr-1" size="10">
+                    </div>
+
+            <!-- Music player -->
+                    <div class="row d-flex">
+                        <div class="d-flex" id="Music">
+                            <audio src="Music/BLUE.mp3"></audio>
+                            <div class="col-3 p-0">
+                                <img class="active" src="Image/BLUE.JPG" id="AlbumCover">
+                            </div>
+                            <div class="col-9">
+                                <div class="row p-0 m-0 justify-content-center align-items-end" id="MusicInfo">
+                                    <h6 class="d-flex m-0 w-75 align-items-end" id="MusicName">BLUE-May Li</h6>
+                                    <hr class="p-0 m-0" id="hr-2" size="0.1">
+                                    <div class="ProgressBox w-75 p-0 justify-content-center">
+                                        <div class="HoverBar"></div>
+                                        <div class="ProgressBar"></div>
+                                    </div>
+                                </div>
+
+                                <div class="row m-0" id="ClickButton">
+                                    <div class="col d-flex justify-content-center align-items-center">
+                                        <button class="PlayButtons ButtonPre w-50">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 0 16 16">
+                                                <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0V4z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="col d-flex justify-content-center align-items-center">
+                                        <button class="PlayButtons ButtonPlay w-50">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="bi w-75 h-75" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="col d-flex justify-content-center align-items-center">
+                                        <button class="PlayButtons ButtonNext w-50">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 0 16 16">
+                                                <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0V4z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

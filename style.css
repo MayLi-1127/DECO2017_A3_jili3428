@@ -5,7 +5,8 @@
 
 body{
     width: 100vw;
-    overflow: hidden;
+    height: 100vh;
+    overflow: scroll;
     background-color: #fff;
 }
 
@@ -31,7 +32,7 @@ ul{
 .LeftBar ul{
     list-style: none;
     width: 100%;
-    height: 100%;
+    height: 11vw;
     flex: 1;
 }
 
@@ -71,11 +72,13 @@ h1{
     color: #b8b8d4;
 }
 
+/* Music Player style */
 #Music{
     max-width: 450px;
     margin-bottom: 8vh;
 }
 
+/* Album Cover */
 #AlbumCover{
     max-width: 100%;
 }
@@ -85,12 +88,12 @@ h1{
 }
 
 #MusicInfo{
-    height: 45%;
+    height: 50%;
     background-color: #dddddd;
 }
 
 #ClickButton{
-    height: 55%;
+    height: 50%;
     background-color: #dddddd;
 }
 
@@ -105,6 +108,11 @@ h6{
     padding-right: 0;
 }
 
+#hr-2{
+    border: none;
+}
+
+/* Progress Bar */
 .ProgressBox{
     position: relative;
     height: 0.8vh;
@@ -124,6 +132,7 @@ h6{
     z-index: 1;
 }
 
+/* Play Button */
 .PlayButtons{
     display: flex;
     justify-content: center;
@@ -142,16 +151,17 @@ h6{
     justify-content: space-between;
 }
 
-.col_list, .col_list2{
-    width: 13%;
+/* Weekly Task Detail */
+#List{
+    width: 15%;
 }
 
-.col_list ul,.col_list2 ul{
+#List ul{
     padding: 0;
     text-align: center;
 }
 
-.col_list ul li{
+#List ul li{
     border: 1px solid #b8b8d4;
     display: flex;
     justify-content: space-around;
@@ -159,4 +169,17 @@ h6{
     font-size: 12px;
     padding: 10px 0;
     background-color:#dfdcee;
+}
+
+#List ul li:nth-child(1){
+    font-size: 24px;
+    font-weight: 800;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #fff;
+}
+
+#List ul li:nth-child(2){
+    background-color: #c0b9ce;
 }

@@ -26,7 +26,7 @@
                     <li>
                         <img class="imgLogo w-100" src="Image/Logo.png" alt="logo">
                     </li>
-                    <li class="item d-flex justify-content-center align-items-center">
+                    <li class="item active d-flex justify-content-center align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 -3 18 22">
                             <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
                         </svg>
@@ -56,16 +56,16 @@
 
             <!-- Main body on the right side -->
             <div class="Main w-100 p-0 m-0 container-fluid d-flex justify-content-center">
-                <div id="MainContent">
+                <div id="MainContent" class="w-75 p-0 m-0">
             <!-- Welcom Slogan -->
-                    <div class="lin" id="Welcome">
+                    <div class="row p-0" id="Welcome">
                         <h1 class="p-0 m-0">Welcome to StudBud</h1>
                         <hr class="p-0 m-0" id="hr-1" size="10">
                     </div>
 
             <!-- Music player -->
-                    <div class="lin">
-                        <div class="d-flex" id="Music">
+                    <div class="row">
+                        <div class="row d-flex" id="Music">
                             <audio src="Music/BLUE.mp3"></audio>
                             <div class="col-3 p-0">
                                 <img class="active" src="Image/BLUE.JPG" id="AlbumCover">
@@ -73,7 +73,7 @@
                             <div class="col-9">
                                 <div class="row p-0 justify-content-center align-items-end" id="MusicInfo">
                                     <h6 class="d-flex m-0 w-75 align-items-end" id="MusicName">BLUE-May Li</h6>
-                                    <hr class="p-0 m-0" id="hr-2" size="0.1">
+                                    <hr class="p-0 m-0" id="hr-2" size="0.2">
                                     <div class="ProgressBox w-75 p-0 justify-content-center">
                                         <div class="HoverBar"></div>
                                         <div class="ProgressBar"></div>
@@ -108,8 +108,10 @@
                     </div>
 
             <!-- Weekly Schedule with check boxes (7 days) -->
-                    <div id="WeeklyPlan">
-                        <div class="col_list">
+                    <div class="row p-0" id="WeeklyPlan">
+
+            <!-- Monday -->
+                        <div class="col-6 col-sm" id="List">
                             <ul>
                                 <li>Mon</li>
                                 <li>TO DOS</li>
@@ -140,7 +142,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col_list">
+
+            <!-- Tuesday -->
+                        <div class="col-6 col-sm" id="List">
                             <ul>
                                 <li>Tue</li>
                                 <li>TO DOS</li>
@@ -171,7 +175,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col_list">
+
+            <!-- Wednesday -->
+                        <div class="col-6 col-sm" id="List">
                             <ul>
                                 <li>Wed</li>
                                 <li>TO DOS</li>
@@ -202,7 +208,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col_list">
+
+            <!-- Thursday -->
+                        <div class="col-6 col-sm" id="List">
                             <ul>
                                 <li>Thu</li>
                                 <li>TO DOS</li>
@@ -233,7 +241,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col_list">
+
+            <!-- Friday -->
+                        <div class="col-6 col-sm" id="List">
                             <ul>
                                 <li>Fri</li>
                                 <li>TO DOS</li>
@@ -264,7 +274,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col_list">
+
+            <!-- Saturday -->
+                        <div class="col-6 col-sm" id="List">
                             <ul>
                                 <li>Sat</li>
                                 <li>TO DOS</li>
@@ -295,7 +307,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col_list">
+
+            <!-- Sunday -->
+                        <div class="col-6 col-sm" id="List">
                             <ul>
                                 <li>Sun</li>
                                 <li>TO DOS</li>
