@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+.Layout{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/* Left Bar style */
+.LeftBar{
+    width: 11vw;
+    height: 100%;
+    background-color: #b8b8d4;
+    position: relative;
+    display: flex;
+}
+
+.LeftBar ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+.LeftBar li{
+    width: 100%;
+    height: 11vw;
+    display: flex;
+}
+
+/* Left Bar style when hovering */
+.LeftBar li.active, .LeftBar li.active:hover{
+    background-color: #fff;
+}
+
+.LeftBar li:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Main Body style */
+#MainContent{
+    width: 90%;
+}
+
+/* Welcome Slogan style */
+#Welcome{
+    height: 15vh;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+}
+
+h1{
+    font-family: 'Archivo Black', sans-serif;
+    justify-items: left;
+}
+
+#hr-1{
+    color: #b8b8d4;
+}
+
+#Music{
+    max-width: 450px;
+    margin-bottom: 8vh;
+}
+
+#AlbumCover{
+    max-width: 100%;
+}
+
+#AlbumCover::before{
+    content: " ";
+}
+
+#MusicInfo{
+    height: 45%;
+    background-color: #dddddd;
+}
+
+#ClickButton{
+    height: 55%;
+    background-color: #dddddd;
+}
+
+h6{
+    background-color: #dddddd;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#MusicName{
+    padding-top: 2.3vh;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ProgressBox{
+    position: relative;
+    height: 0.8vh;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.HoverBar{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.ProgressBar{
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.PlayButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dddddd;
+    border: none;
+}
+
+.PlayButtons:hover{
+    fill: #fff;
+}
+
+#WeeklyPlan{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col_list, .col_list2{
+    width: 13%;
+}
+
+.col_list ul,.col_list2 ul{
+    padding: 0;
+    text-align: center;
+}
+
+.col_list ul li{
+    border: 1px solid #b8b8d4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+    padding: 10px 0;
+    background-color:#dfdcee;
+}
