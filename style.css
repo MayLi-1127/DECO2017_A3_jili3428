@@ -23,7 +23,7 @@ ul{
 /* Left Bar style */
 .LeftBar{
     width: 11vw;
-    height: 100%;
+    height: auto;
     background-color: #b8b8d4;
     position: relative;
     display: flex;
@@ -182,4 +182,31 @@ h6{
 
 #List ul li:nth-child(2){
     background-color: #c0b9ce;
+}
+
+.SearchBar{
+    margin-bottom: 8vh;
+}
+
+#SearchInput{
+    height: 10vh;
+    outline: none;
+    background-color: #dddddd;
+    border: none;
+}
+
+#SearchIcon{
+    height: 10vh;
+    outline: none;
+    background-color: #b8b8d4;
+    border: none;
+}
+
+#SearchInfo, #WordInfo, #SearchHistory{
+    height: 30vh;
+}
+
+#WordInfo{
+    padding-left: 0;
+    padding-right: 8vw;;
 }

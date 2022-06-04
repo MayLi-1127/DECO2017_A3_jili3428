@@ -57,30 +57,30 @@
             <!-- Main body on the right side -->
             <div class="Main w-100 p-0 m-0 container-fluid d-flex justify-content-center">
                 <div id="MainContent" class="w-75 p-0 m-0">
-            <!-- Page Tilte -->
+            <!-- Welcom Slogan -->
                     <div class="row p-0" id="Welcome">
                         <h1 class="p-0 m-0">Welcome to StudBud</h1>
                         <hr class="p-0 m-0" id="hr-1" size="10">
                     </div>
 
             <!-- Music player -->
-                    <div class="row d-flex">
-                        <div class="d-flex" id="Music">
+                    <div class="row">
+                        <div class="row d-flex" id="Music">
                             <audio src="Music/BLUE.mp3"></audio>
                             <div class="col-3 p-0">
                                 <img class="active" src="Image/BLUE.JPG" id="AlbumCover">
                             </div>
                             <div class="col-9">
-                                <div class="row p-0 m-0 justify-content-center align-items-end" id="MusicInfo">
+                                <div class="row p-0 justify-content-center align-items-end" id="MusicInfo">
                                     <h6 class="d-flex m-0 w-75 align-items-end" id="MusicName">BLUE-May Li</h6>
-                                    <hr class="p-0 m-0" id="hr-2" size="0.1">
+                                    <hr class="p-0 m-0" id="hr-2" size="0.2">
                                     <div class="ProgressBox w-75 p-0 justify-content-center">
                                         <div class="HoverBar"></div>
                                         <div class="ProgressBar"></div>
                                     </div>
                                 </div>
 
-                                <div class="row m-0" id="ClickButton">
+                                <div class="row" id="ClickButton">
                                     <div class="col d-flex justify-content-center align-items-center">
                                         <button class="PlayButtons ButtonPre w-50">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 0 16 16">
@@ -107,10 +107,33 @@
                         </div>
                     </div>
 
-                    <div>
-
+            <!-- Dictionary Search Bar -->        
+                    <div class="SearchBar p-0 container-fluid d-flex justify-content-center align-items-center">
+                        <form action=" " class="row w-50 justify-content-center">
+                            <input class="col" id="SearchInput" type="text" placeholder="Type your words here" name="search">
+                            <button class="col p-0" id="SearchIcon" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </form>
                     </div>
-                </div>
+
+            <!-- Word Info & Search History -->
+                    <div class="row p-0 align-items-center" id="SearchInfo">
+                        <div class="col-8" id="WordInfo">
+                            <h4>Affinity Diagramming</h4>
+                            <br>
+                            <p>Affinity diagramming is a simple and cost effective systematic method for processing research data which is (typically) qualitative in nature.</p>
+                        </div>
+                        <div class="col p-0" id="SearchHistory">
+                            <h4>Your Browsing</h4>
+                            <br>
+                            <p>1. Affinity Diagramming <br> 2. Bodystorming</p>
+                        </div>
+                    </div>
+                </div>    
+
             </div>
         </div>
     </body>
