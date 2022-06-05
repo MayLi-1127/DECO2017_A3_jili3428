@@ -1,3 +1,4 @@
+// Setting Clock
 var sti;
 function startTime(){
         var clock = document.getElementById("clock");
@@ -62,6 +63,7 @@ function stopClock(){
     clearInterval(sti);
 }
 
+// Setting Music Player
 function playMusic(){
     $("audio")[0].play();
     $("#PlaySvg").hide();
@@ -122,6 +124,7 @@ $(".fa-close").click(function(){
     $(this).parent().parent().hide();
 });
 
+// Setting Search Bar
 $("#SearchIcon").click(function(){
     var SearchInput = $("#SearchInput").val();
     if(SearchInput==""){
