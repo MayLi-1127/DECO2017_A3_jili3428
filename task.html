@@ -8,12 +8,11 @@
         <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.2/js/bootstrap.bundle.min.js"></script>
     
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="http://apps.bdimg.com/libs/fontawesome/4.2.0/css/font-awesome.min.css">
         <link href="style.css" rel="stylesheet" type="text/css">
         <script src="jquery.min.js"></script>
         <script src="script.js"></script>
@@ -69,7 +68,7 @@
             <!-- Welcom Slogan -->
                     <div class="lin" id="Welcome">
                         <h1 class="p-0 m-0">Welcome to StudBud</h1>
-                        <hr class="p-0" id="hr-1" size="10">
+                        <hr class="p-0 m-0" id="hr-1" size="10">
                     </div>
 
             <!-- Music player -->
@@ -82,30 +81,30 @@
                             <div class="col-9">
                                 <div class="row p-0 m-0 justify-content-center align-items-end" id="MusicInfo">
                                     <h6 class="d-flex m-0 w-75 align-items-end" id="MusicName">BLUE-May Li</h6>
-                                    <hr class="p-0 m-0" id="hr-2" size="0.2">
+                                    <hr class="p-0 m-0" id="hr-2" size="0.1">
                                     <div class="ProgressBox w-75 p-0 justify-content-center">
                                         <div class="HoverBar"></div>
                                         <div class="ProgressBar"></div>
                                     </div>
                                 </div>
 
-                                <div class="row p-0 m-0" id="ClickButton">
+                                <div class="row" id="ClickButton">
                                     <div class="col d-flex justify-content-center align-items-center">
-                                        <button class="PlayButtons ButtonPre w-50">
+                                        <button class="PlayButtons ButtonPre w-50" onclick="changeMusic();">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 0 16 16">
                                                 <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0V4z"/>
                                             </svg>
                                         </button>
                                     </div>
                                     <div class="col d-flex justify-content-center align-items-center">
-                                        <button class="PlayButtons ButtonPlay w-50">
+                                        <button class="PlayButtons ButtonPlay w-50" onclick="playMusic();">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="bi w-75 h-75" viewBox="0 0 16 16">
                                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
                                             </svg>
                                         </button>
                                     </div>
                                     <div class="col d-flex justify-content-center align-items-center">
-                                        <button class="PlayButtons ButtonNext w-50">
+                                        <button class="PlayButtons ButtonNext w-50" onclick="changeMusic();">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 0 16 16">
                                                 <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0V4z"/>
                                             </svg>
@@ -119,11 +118,7 @@
             <!-- Task Management -->
                     <div class="TaskContent">
                         <div class="ColorLists">
-                            <span class="ColorList1">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                </svg>
-                            </span>
+                            <span class="ColorList1"><i class="fa fa-search"></i></span>
                             <span class="ColorList2"></span>
                             <span class="ColorList3"></span>
                             <span class="ColorList4"></span>
@@ -131,11 +126,7 @@
                         <div class="TaskInfo">
                             <ul>
                                 <li class="Color1">
-                                    <p class="Close">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" id="CloseIcon" viewBox="0 0 16 16">
-                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                        </svg>
-                                    </p>
+                                    <p><i class="fa fa-close" aria-hidden="true"></i></p>
                                     <p>DECO3100 LEC</p>
                                     <p>7:00-8:00</p>
                                     <p>
@@ -143,11 +134,7 @@
                                     </p>
                                 </li>
                                 <li class="Color2">
-                                    <p class="Close">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" id="CloseIcon" viewBox="0 0 16 16">
-                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                        </svg>
-                                    </p>
+                                    <p><i class="fa fa-close" aria-hidden="true"></i></p>
                                     <p>DECO3100 TUT</p>
                                     <p>8:00-10:00</p>
                                     <p>
@@ -155,10 +142,7 @@
                                     </p>
                                 </li>
                                 <li class="Color3">
-                                    <p class="Close"><svg xmlns="http://www.w3.org/2000/svg" class="bi" id="CloseIcon" viewBox="0 0 16 16">
-                                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                      </svg>
-                                    </p>
+                                    <p><i class="fa fa-close" aria-hidden="true"></i></p>
                                     <p>DECO3100 PRAC</p>
                                     <p>11:00-14:00</p>
                                     <p>
@@ -166,10 +150,7 @@
                                     </p>
                                 </li>
                                 <li class="Color1">
-                                    <p class="Close"><svg xmlns="http://www.w3.org/2000/svg" class="bi" id="CloseIcon" viewBox="0 0 16 16">
-                                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                      </svg>
-                                    </p>
+                                    <p><i class="fa fa-close" aria-hidden="true"></i></p>
                                     <p>DECO2014 LEC</p>
                                     <p>8:00-9:00</p>
                                     <p>
@@ -177,11 +158,7 @@
                                     </p>
                                 </li>
                                 <li class="Color1">
-                                    <p class="Close">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" id="CloseIcon" viewBox="0 0 16 16">
-                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                        </svg>
-                                    </p>
+                                    <p><i class="fa fa-close" aria-hidden="true"></i></p>
                                     <p>DECO2014 TUT</p>
                                     <p>10:00-12:00</p>
                                     <p>
@@ -189,11 +166,7 @@
                                     </p>
                                 </li>
                                 <li class="Color2">
-                                    <p class="Close">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" id="CloseIcon" viewBox="0 0 16 16">
-                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                        </svg>
-                                    </p>
+                                    <p><i class="fa fa-close" aria-hidden="true"></i></p>
                                     <p>DECO2014 PRAC</p>
                                     <p>12:00-15:00</p>
                                     <p>
@@ -201,11 +174,7 @@
                                     </p>
                                 </li>
                                 <li class="TaskAdd">
-                                    <button class="AddNew align-items-center justify-content-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi w-25 h-25" viewBox="0 0 16 16">
-                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                        </svg>
-                                    </button>
+                                    <i class="fa fa-plus"></i>
                                 </li>
                                 <li></li>
                                 <li></li>

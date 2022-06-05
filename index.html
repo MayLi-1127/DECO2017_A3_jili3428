@@ -69,7 +69,7 @@
             <!-- Welcom Slogan -->
                     <div class="lin" id="Welcome">
                         <h1 class="p-0 m-0">Welcome to StudBud</h1>
-                        <hr class="p-0" id="hr-1" size="10">
+                        <hr class="p-0 m-0" id="hr-1" size="10">
                     </div>
 
             <!-- Music player -->
@@ -82,30 +82,30 @@
                             <div class="col-9">
                                 <div class="row p-0 m-0 justify-content-center align-items-end" id="MusicInfo">
                                     <h6 class="d-flex m-0 w-75 align-items-end" id="MusicName">BLUE-May Li</h6>
-                                    <hr class="p-0 m-0" id="hr-2" size="0.2">
+                                    <hr class="p-0 m-0" id="hr-2" size="0.1">
                                     <div class="ProgressBox w-75 p-0 justify-content-center">
                                         <div class="HoverBar"></div>
                                         <div class="ProgressBar"></div>
                                     </div>
                                 </div>
 
-                                <div class="row p-0 m-0" id="ClickButton">
+                                <div class="row" id="ClickButton">
                                     <div class="col d-flex justify-content-center align-items-center">
-                                        <button class="PlayButtons ButtonPre w-50">
+                                        <button class="PlayButtons ButtonPre w-50" onclick="changeMusic();">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 0 16 16">
                                                 <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0V4z"/>
                                             </svg>
                                         </button>
                                     </div>
                                     <div class="col d-flex justify-content-center align-items-center">
-                                        <button class="PlayButtons ButtonPlay w-50">
+                                        <button class="PlayButtons ButtonPlay w-50" onclick="playMusic();">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="bi w-75 h-75" viewBox="0 0 16 16">
                                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
                                             </svg>
                                         </button>
                                     </div>
                                     <div class="col d-flex justify-content-center align-items-center">
-                                        <button class="PlayButtons ButtonNext w-50">
+                                        <button class="PlayButtons ButtonNext w-50" onclick="changeMusic();">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 0 16 16">
                                                 <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0V4z"/>
                                             </svg>

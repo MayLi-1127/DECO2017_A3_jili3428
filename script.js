@@ -1,3 +1,22 @@
+function playMusic(){
+    $("audio")[0].play();
+}
+
+function changeMusic(){
+    var src=$("AlbumCover").attr("src");
+    if(src=="Image/BLUE.JPG"){
+        $("AlbumCover").attr("src", "Image/LOVE.JPG");
+        $("MusicName").html("LOVE-May Li");
+        $("audio").attr("src", "Music/LOVE.mp3");
+        $("audio")[0].play();
+    }else{
+        $("AlbumCover").attr("src", "Image/BLUE.JPG");
+        $("MusicName").html("BLUE-May Li");
+        $("audio").attr("src", "Music/BLUE.mp3");
+        $("audio")[0].play();
+    }
+}
+
 $(".ColorList2").click(function(){
     $(".Color1").show();
     $(".Color2").hide();
@@ -16,13 +35,17 @@ $(".ColorList4").click(function(){
     $(".Color2").hide();
 });
 
+$(".fa-close").click(function(){
+    $(this).parent().parent().hide();
+});
+
 $(function(){
     var setI;
     var clock = document.getElementById("clock");
     function initNumXY(){
         var radius = 120;
         var dot_num = 360 / $(".dot").length;
-        var ahd = dot_num*Math.PI / 180;
+        var ahd = dot_num * Math.PI / 180;
         $(".dot").each(function(index, el){
             $(this).css({
                 "left": 180 + Math.sin((ahd * index)) * radius,
@@ -38,32 +61,40 @@ $(function(){
             scale[i].getElementsByClassName.transform="rotate(" + (i * 30) + "deg)";
         }
     }
-})
-
-initNumXY();
-var HourLine = document.getElementById("HourLine"), MinuteLine = document.getElementById("MinuteLine"),
+    initNumXY();
+    var HourLine = document.getElementById("HourLine"), MinuteLine = document.getElementById("MinuteLine"),
     SecondLine = document.getElementById("SecondLine"), Hour = document.getElementById("Hour"),
     Minute = document.getElementById("Minute"), Second = document.getElementById("Second");
 
-function setTime(){
-    var nowdate = new Date();
-    var hours = nowdate.getHours(), minutes = nowdate.getMinutes(), seconds = nowdate.getDate();
-    Hour.innerHTML = hours >= 10 ? hours : "0" + hours;
-    Minute.innerHTML = minutes >= 10 ? minutes : "0" + minutes;
-    Second.innerHTML = seconds >= 10 ? seconds : "0" + seconds;
+    function setTime(){
+        var nowdate = new Date();
+        var hours = nowdate.getHours(), minutes = nowdate.getMinutes(), seconds = nowdate.getDate();
+        Hour.innerHTML = hours >= 10 ? hours : "0" + hours;
+        Minute.innerHTML = minutes >= 10 ? minutes : "0" + minutes;
+        Second.innerHTML = seconds >= 10 ? seconds : "0" + seconds;
 
-    var Hour_rotate = (hours * 30 - 90) + (Math.floor(minutes / 12) * 6);
-    HourLine.style.transform = 'rotate(' + Hour_rotate + 'deg)';
-    MinuteLine.style.transform = 'rotate(' + (minutes * 6 - 90) + 'deg)';
-    SecondLine.style.transform = 'rotate(' + (seconds * 6 - 90) + 'deg)';
-}
+        var Hour_rotate = (hours * 30 - 90) + (Math.floor(minutes / 12) * 6);
+        HourLine.style.transform = 'rotate(' + Hour_rotate + 'deg)';
+        MinuteLine.style.transform = 'rotate(' + (minutes * 6 - 90) + 'deg)';
+        SecondLine.style.transform = 'rotate(' + (seconds * 6 - 90) + 'deg)';
+    }
+    setTime();
+    setI = setInterval(setTime, 1000);
+});
 
-setTime();
-setI = setInterval(setTime, 1000);
 
 function startClock(){
-    setInterval(setTime, 1000);
+    setI = setInterval(setTime, 1000);
 }
 function stopClock(){
     clearInterval(setI);
 }
+
+$("#SearchIcon").click(function(){
+    var SearchInput = $("#SearchInput").val();
+    if(SearchInput==""){
+        $("Tips").html("Please type your words!");
+    }else{
+        $("Tips").html("No result!");
+    }
+});
