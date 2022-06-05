@@ -16,6 +16,7 @@
 
         <link href="style.css" rel="stylesheet" type="text/css">
         <script src="script.js"></script>
+        <script src="jquery.min.js"></script>
     </head>
 
     <body>
@@ -42,7 +43,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="item d-flex justify-content-center align-items-center">
+                    <li class="item active d-flex justify-content-center align-items-center">
                         <a href="time.html">
                             <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 -3 18 22">
                                 <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
@@ -50,7 +51,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="item active d-flex justify-content-center align-items-center">
+                    <li class="item d-flex justify-content-center align-items-center">
                         <a href="dictionary.html">
                             <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 -3 18 23">
                                 <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z"/>
@@ -115,29 +116,43 @@
                         </div>
                     </div>
 
-            <!-- Dictionary Search Bar -->        
-                    <div class="SearchBar p-0 container-fluid d-flex justify-content-center align-items-center">
-                        <form action=" " class="row w-50 justify-content-center">
-                            <input class="col" id="SearchInput" type="text" placeholder="Type your words here" name="search">
-                            <button class="col p-0" id="SearchIcon" type="submit">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="bi w-50 h-50" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
-
-            <!-- Word Info & Search History -->
-                    <div class="row p-0 align-items-center" id="SearchInfo">
-                        <div class="col-8" id="WordInfo">
-                            <h4>Affinity Diagramming</h4>
-                            <br>
-                            <p>Affinity diagramming is a simple and cost effective systematic method for processing research data which is (typically) qualitative in nature.</p>
+            <!-- Timer -->
+                    <div class="ClockContent">
+                        <div class="Clock1">
+                            <h3>Pomodoro Timer</h3>
+                            <div class="Box" id="clock">
+                                <div class="Origin"></div>
+                                <div class="DotBox">
+                                    <div class="dot">6</div>
+                                    <div class="dot">5</div>
+                                    <div class="dot">4</div>
+                                    <div class="dot">3</div>
+                                    <div class="dot">2</div>
+                                    <div class="dot">1</div>
+                                    <div class="dot">12</div>
+                                    <div class="dot">11</div>
+                                    <div class="dot">10</div>
+                                    <div class="dot">9</div>
+                                    <div class="dot">8</div>
+                                    <div class="dot">7</div>
+                                </div>
+                                <div class="ClockLine HourLine" id="HourLine"></div>
+                                <div class="ClockLine MinuteLine" id="MinuteLine"></div>
+                                <div class="ClockLine SecondLine" id="SecondLine"></div>
+                            </div>
                         </div>
-                        <div class="col p-0" id="SearchHistory">
-                            <h4>Your Browsing</h4>
-                            <br>
-                            <p>1. Affinity Diagramming <br> 2. Bodystorming</p>
+
+                        <div class="Clock2">
+                            <h3>Task Timer</h3>
+                            <div class="TimeInfo">
+                                <div class="Time" id="Hour"></div>:<div class="Time" id="Minute"></div>:<div class="Time" id="Second"></div>
+                            </div>
+                            <div class="PushButton">
+                                <div>
+                                    <a href="javascript:void(0)" onclick="startClock()">START</a>
+                                    <a href="javascript:void(0)" onclick="stopClock()">STOP</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>    
