@@ -3,7 +3,7 @@
     padding: 0;
 }
 *, ::after, ::before{
-    box-sizing: unset!important;
+    box-sizing: unset !important;
 }
 
 body{
@@ -14,6 +14,10 @@ body{
 
 ul{
     list-style: none;
+}
+
+.Hide{
+    display: none;
 }
 
 .Layout{
@@ -220,7 +224,7 @@ h6{
 }
 
 .TaskContent .ColorList1{
-    font-size: 12px!important;
+    font-size: 12px !important;
     margin-right: 5px;
     background-color: #f4f4f4;
     overflow: hidden;
@@ -235,12 +239,12 @@ h6{
 
 .ColorList2{
     background-color: #fbe4ee;
-    border-right: none!important;
+    border-right: none !important;
 }
 
 .ColorList3{
     background-color: #fffcd1;
-    border-right: none!important;
+    border-right: none !important;
 }
 
 .ColorList4{
@@ -272,19 +276,7 @@ h6{
 }
 
 .fa-close{
-    curosr: pointer;
-}
-
-@media screen and (max-width: 768px){
-    .TaskInfo li{
-        width: 48%;
-        padding: 0 10px;
-        margin-bottom: 5vh;
-        box-sizing: border-box!important;
-    }
-    .ColList{
-        width: 100%;
-    }
+    cursor: pointer;
 }
 
 .TaskAdd{
@@ -348,25 +340,6 @@ h6{
     flex: 2;
     height: 650px;
     position: relative;
-}
-
-@media screen and (max-width: 768x){
-    .ClockContent{
-        width: 100%;
-        display: flex;
-        flex: 1;
-        flex-wrap: wrap;
-    }
-    .Clock1, .Clock2{
-        width: 100%;
-        flex: 1;
-        height: 650px;
-        border-right: none!important;
-        border-bottom: 5px solid #c0b9ce;
-    }
-    .Clock2{
-        margin-top: 5vh;
-    }
 }
 
 .Clock1{
@@ -442,8 +415,32 @@ h6{
     position: absolute;
 }
 
+.clock-scale{
+    width: 195px;
+    height: 2px;
+    transform-origin: 0% 50%;
+    z-index: 7;
+    position: absolute;
+    top: 199px;
+    left: 200px;
+}
+
+.scale-show{
+    width: 12px;
+    height: 12px;
+    background-color: #cbd3ea;
+    float: left;
+    border-radius: 50%;
+}
+
+.scale-hidden{
+    width: 183px;
+    height: 2px;
+    float: left;
+}
+
 .TimeInfo{
-    width:j 220px;
+    width: 220px;
     height: 400px;
     margin: auto;
     margin-top: 80px;
@@ -475,7 +472,7 @@ h6{
 }
 
 .PushButton{
-    width: 96%!important;
+    width: 96% !important;
     position: absolute;
     height: 80px;
     width: 10px;
@@ -498,7 +495,7 @@ h6{
     height: 30px;
     background-color: #bdbbce;
     text-align: center;
-    color: #fff!important;
+    color: #fff !important;
     font-size: 18px;
     cursor: pointer;
 }
@@ -510,6 +507,7 @@ h6{
 }
 
 .SearchBar .Tips{
+    width: 100%;
     text-align: center;
     line-height: 50px;
     color: #f9738a;
@@ -524,7 +522,9 @@ h6{
 }
 
 #SearchIcon{
+    width: 10vh;
     height: 10vh;
+    flex: unset;
     outline: none;
     background-color: #b8b8d4;
     border: none;
@@ -537,4 +537,43 @@ h6{
 #WordInfo{
     padding-left: 1vw;
     padding-right: 7vw;
+}
+
+@media screen and (max-width: 1200px){
+    .ColList{
+        width: 45%;
+        flex: unset;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .ClockContent{
+        width: 100%;
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+    }
+
+    .Clock1, .Clock2{
+        width: 100%;
+        height: 650px;
+        flex: 1;
+        border-right: none !important;
+        border-bottom: 5px solid #c0b9ce;
+    }
+
+    .Clock2{
+        margin-top: 5vh;
+    }
+
+    .TaskInfo li{
+        width: 48%;
+        padding: 0 10px;
+        margin-bottom: 5vh;
+        box-sizing: border-box !important;
+    }
+
+    .ColList{
+        width: 100%;
+    }
 }
