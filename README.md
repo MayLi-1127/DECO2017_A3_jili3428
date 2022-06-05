@@ -37,7 +37,7 @@ Remove the original alphabet and change it to a search bar, which is convenient 
 ## About Change
 This time I learned a new layout structure - Bootstrap. Self-adaptation has always been a problem for me, and Bootstrap can effectively solve these problems. It achieves self-adaptation by splitting regions. Although I am not very proficient, can solve the problem of partial self-adaptation, which is an improvement for me.
 
-Also, I learned a lot about how to write js files through some online tutorials. Being able to play music, start timers, etc. through JavaScript was a breakthrough for me. Although there are still some functions that cannot be implemented due to technical bottlenecks, I have made great progress in the writing of web pages. At least I no longer worry about page layout structure and simple adaptive. I am very happy to have such a try and gain through this assignment.
+Also, I learned a lot about how to write js files through some online tutorials. Being able to play music, etc. through JavaScript was a breakthrough for me. Although there are still some functions that cannot be implemented due to technical bottlenecks, I have made great progress in the writing of web pages. At least I no longer worry about page layout structure and simple adaptive. I am very happy to have such a try and gain through this assignment.
 
 ## Mock Up - Comparison of two versions
 #### Home Page
